@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editModeLicence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Licence Plate"
+        android:textSize="22sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/editModeStateSelector"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editModeLicence"
+        android:prompt="@string/state_or_prov_string"
+        android:spinnerMode="dialog"/>
+
+    <Spinner
+        android:id="@+id/editModeInfractionSelector"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editModeStateSelector"
+        android:prompt="@string/infraction_string"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:spinnerMode="dialog"/>
+
+    <Spinner
+        android:id="@+id/editModeLocationSelector"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editModeInfractionSelector"
+        android:prompt="@string/location_string"
+        android:layout_marginTop="10dp"
+        android:spinnerMode="dialog"/>
+
+    <EditText
+        android:id="@+id/editModeNotesTextEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Notes (optional)"
+        app:layout_constraintTop_toBottomOf="@id/editModeLocationSelector"
+        android:textSize="16sp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/editTowedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Vehicle towed?"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/editModeNotesTextEdit" />
+
+
+    <CheckBox
+        android:id="@+id/editTowedSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/editModeNotesTextEdit"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="@id/editTowedTextView"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/buttonLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTowedTextView">
+
+        <Button
+            android:id="@+id/editModeLicencePhotoLabel"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Capture Vehicle"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:textColor="#fff"
+            android:background="@color/colorPrimary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTowedTextView"
+            />
+
+        <Button
+            android:id="@+id/editModeTicketPhotoLabel"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Capture Ticket"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="#fff"
+            android:background="@color/colorPrimary"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonLinearLayout">
+
+        <ImageView
+            android:id="@+id/editModeLicencePhotoImageView"
+            android:layout_width="160dp"
+            android:layout_height="180dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editModeLicencePhotoLabel" />
+
+
+
+
+        <ImageView
+            android:id="@+id/editModeTicketPhotoImageView"
+            android:layout_width="160dp"
+            android:layout_height="180dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editModeTicketPhotoLabel" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/saveTicketButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="16dp"
+            android:clickable="true"
+            android:elevation="8dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_save_24px" />
+
+        <TextView
+            android:id="@+id/editModeDateTimeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date/Time: "
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/editModeDateTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DateTime"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/editModeDateTimeLabel" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

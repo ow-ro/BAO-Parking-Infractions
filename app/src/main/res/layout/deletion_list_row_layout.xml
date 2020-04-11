@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="7dp"
+    android:paddingBottom="10dp"
+    android:id="@+id/relDelLayoutRowView"
+    android:descendantFocusability = "blocksDescendants">
+
+    <TextView
+        android:id="@+id/delListPlate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textSize="18sp"
+        android:text="Ticket plate"
+        android:layout_marginTop="0dp"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/delListState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/delListPlate"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toRightOf="@id/delListPlate"
+        android:text="Ticket state"
+        android:textColor="#343434"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/delListLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/delListState"
+        android:layout_marginTop="5dp"
+        android:textColor="#343434"
+        android:textSize="12sp"
+        android:text="Ticket location"/>
+
+    <TextView
+        android:id="@+id/delListInfraction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/delListState"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/delListLocation"
+        android:text="Ticket infraction"
+        android:textColor="#343434"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/delListDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/delListInfraction"
+        android:layout_marginTop="5dp"
+        android:textColor="#343434"
+        android:textSize="12sp"
+        android:text="Ticket date/time"/>
+
+    <TextView
+        android:id="@+id/delListDelDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/delListDateTime"
+        android:layout_marginTop="5dp"
+        android:textColor="#343434"
+        android:textSize="12sp"
+        android:text="Deletion date/time"/>
+
+    <Button
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="13dp"
+        android:id="@+id/delTypeButton"
+        android:background="@drawable/ic_assignment_24px"/>
+
+
+
+</RelativeLayout>

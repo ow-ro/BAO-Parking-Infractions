@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="locations_array">
+        <item>Select Location</item>
+        <item>Lot 1</item>
+        <item>Lot 2</item>
+        <item>Lot 3</item>
+        <item>Lot 4</item>
+        <item>Lot 5</item>
+        <item>Lot 6</item>
+        <item>Lot 7</item>
+        <item>Lot 8</item>
+        <item>Lot K</item>
+        <item>Overflow (K to 7)</item>
+        <item>Overflow (7 to 8)</item>
+        <item>Base 2</item>
+        <item>Fitz Bus Loop</item>
+        <item>Springs Loop</item>
+        <item>Creekside</item>
+        <item>Admin/Whistler Kids</item>
+        <item>Daylodge Loop</item>
+        <item>Other</item>
+    </string-array>
+</resources>

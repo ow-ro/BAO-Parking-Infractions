@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="7dp"
+    android:paddingBottom="10dp"
+    android:id="@+id/relLayoutRowView"
+    android:descendantFocusability = "blocksDescendants">
+
+    <TextView
+        android:id="@+id/ticketListPlate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textSize="18sp"
+        android:text="Ticket plate"
+        android:layout_marginTop="0dp"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/ticketListState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ticketListPlate"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toRightOf="@id/ticketListPlate"
+        android:text="Ticket state"
+        android:textColor="#343434"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/ticketListLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ticketListState"
+        android:layout_marginTop="5dp"
+        android:textColor="#343434"
+        android:textSize="12sp"
+        android:text="Ticket location"/>
+
+    <TextView
+        android:id="@+id/ticketListInfraction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ticketListState"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/ticketListLocation"
+        android:text="Ticket infraction"
+        android:textColor="#343434"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/ticketListDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ticketListInfraction"
+        android:layout_marginTop="5dp"
+        android:textColor="#343434"
+        android:textSize="12sp"
+        android:text="Ticket date/time"/>
+
+
+    <Button
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="13dp"
+        android:id="@+id/typeButton"
+        android:background="@drawable/ic_assignment_24px"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:id="@+id/searchFilter"
+        android:hint="@string/search_hint"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchFilter"
+        android:id="@+id/ticketListView2"
+        android:divider="@color/colorBorder"
+        android:dividerHeight="1dp">
+
+    </ListView>
+
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn1"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:fabCustomSize="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="22dp"
+        android:layout_marginEnd="22dp"
+        android:clickable="true"
+        android:elevation="0dp"
+        app:elevation="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/ic_assignment_24px_white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:fabCustomSize="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="22dp"
+        android:layout_marginEnd="22dp"
+        android:clickable="true"
+        android:backgroundTint="@color/colorBlue"
+        app:borderWidth="0dp"
+        android:elevation="0dp"
+        app:elevation="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/ic_how_to_reg_24px_white" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addTicketButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/ic_add_24px"
+        android:scaleType="fitXY"
+        android:elevation="0dp"
+        app:elevation="0dp"/>
+
+    <TextView
+        android:id="@+id/btn1Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="34dp"
+        android:layout_toLeftOf="@id/btn1"
+        android:layout_weight="0"
+        android:background="@drawable/rounded_corners"
+        android:ellipsize="end"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:textColor="#fff"
+        android:text="   New Exception   " />
+
+    <TextView
+        android:id="@+id/btn2Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="34dp"
+        android:layout_toLeftOf="@id/btn1"
+        android:layout_weight="0"
+        android:background="@drawable/rounded_corners"
+        android:ellipsize="end"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:textColor="#fff"
+        android:text="   New Ticket   " />
+
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="7dp"
+    android:paddingBottom="10dp"
+    android:id="@+id/relLayoutRowView"
+    android:descendantFocusability = "blocksDescendants">
+
+    <TextView
+        android:id="@+id/ticketListPlate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="Ticket plate"
+        android:layout_marginStart="2dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/ticketListInfraction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ticketListState"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@+id/ticketListLocation"
+        android:text="Ticket infraction"
+        android:textColor="#343434"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/ticketListLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ticketListState"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="46dp"
+        android:text="Ticket location"
+        android:textColor="#343434"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/ticketListDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ticketListInfraction"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="46dp"
+        android:text="Ticket date/time"
+        android:textColor="#343434"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/ticketListState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ticketListPlate"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="3dp"
+        android:layout_toRightOf="@id/ticketListPlate"
+        android:text="Ticket state"
+        android:textColor="#343434"
+        android:textSize="14sp" />
+
+
+    <Button
+        android:id="@+id/typeButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/ic_assignment_24px" />
+
+    <ImageView
+        android:id="@+id/towIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/tow_icon"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="42dp"/>
+
+    <ImageView
+        android:id="@+id/ticketNumber"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/one"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="7dp"/>
+
+
+</RelativeLayout>

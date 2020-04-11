@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="infractions_array">
+        <item>Select Infraction Type</item>
+        <item>Overnight</item>
+        <item>Fire Lane</item>
+        <item>Commercial Loading Zone</item>
+        <item>No Pass/Permit</item>
+        <item>Exceeding Time Indicated</item>
+        <item>No Parking Zone (Signed)</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>

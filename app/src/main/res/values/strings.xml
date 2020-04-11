@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BAO Parking Infractions</string>
+    <string name="state_or_prov_string">State/Province</string>
+    <string name="infraction_string">Infraction</string>
+    <string name="location_string">Location</string>
+    <string name="search_title">Search</string>
+    <string name="search_hint">Enter a licence plate</string>
+    <string name="licence_help_title">Guidelines</string>
+    <string name="admin_title">Admin Operations</string>
+    <string name="bao_title">Base Area Ops Contact</string>
+    <string name="app_contact">App Support: Owen @ roberts.7@icloud.com</string>
+    <string name="hint_password">hint</string>
+    <string name="deletion_history_title">Show Deleted Ticket History</string>
+    <string name="licence_help_details_1">• Be sure to enter the licence exactly as it is displayed on the vehicle - including any punctuation (spaces, dashes, apostrophes, etc)</string>
+    <string name="licence_help_details_2">• Check the history of the licence prior to adding a ticket - use the search feature to do this</string>
+    <string name="licence_help_details_3">• Where required, add additional ticket information in the notes field, e.g. when the infraction type is not in the pre-populated list of options.</string>
+</resources>

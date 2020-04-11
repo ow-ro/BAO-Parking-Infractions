@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/licenceHelpTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:text="@string/licence_help_title"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0"/>
+
+
+    <TextView
+        android:id="@+id/licenceHelpText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="@string/licence_help_details_1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0"/>
+
+    <TextView
+        android:id="@+id/licenceHelpText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="@string/licence_help_details_2"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0"/>
+
+    <TextView
+        android:id="@+id/licenceHelpText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="@string/licence_help_details_3"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:layout_marginBottom="0dp"
+        android:text="Example:"
+        />
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:src="@drawable/l_plate"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="0dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:textSize="14sp"
+        android:text="Would be entered as: DE3 10T"
+        />
+
+    <TextView
+        android:id="@+id/adminPanelTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:text="@string/admin_title"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0"/>
+
+    <Button
+        android:id="@+id/deletedHistoryAdminButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Show Deletion History"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/backupDBButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Backup database"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/baoTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0"
+        android:text="@string/bao_title"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:textSize="14sp"
+        android:text="Office: (604) 938 7242" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:textSize="14sp"
+        android:layout_marginStart="10dp"
+        android:text="Cell: (604) 938 3994" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:textSize="14sp"
+        android:layout_marginStart="10dp"
+        android:text="Email: wbbaseareaopsreq@vailresorts.com" />
+
+</LinearLayout>
